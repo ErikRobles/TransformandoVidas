@@ -27,6 +27,56 @@ h1, h2, h3 {
 /* FLEX STYLES */
 
 /* first example */
+.wrapper {
+  width: 75%;
+  display: flex;
+  flex-direction: row;
+  margin-left: 12.7%;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-right: -4px;
+}
+
+.content1 {
+  display: flex;
+  flex: 7;
+}
+.content2 {
+  display: flex;
+  flex: 5;
+}
+
+.item1 {
+  flex: 4;
+  margin-left: 0;
+  margin-right: 0px;
+  margin-bottom: 15px;
+}
+
+.item2 {
+  flex: 4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 15px;
+}
+
+.item3 {
+  flex: 4;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 15px;
+}
+
+.Column-container {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: nowrap;
+  justify-content: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
 .container {
   margin: 2px auto 0 auto;
   padding: 15px;
@@ -174,13 +224,24 @@ h1, h2, h3 {
   flex: 1;
 }
 
+.Site {
+  display: flex;
+  min-height: 100%;
+  flex-direction: column;
+
+}
+
+.Site-content {
+  flex: 1;
+}
+
 .mainContent-container {
   display: flex;
   flex-flow: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 12.5%;
   margin-top: 20px;
+  margin-left: 12.5%;
   width: 75%;
 }
 
@@ -216,6 +277,84 @@ h1, h2, h3 {
 /* END FLEX STYLES */
 
 /* Class Styles */
+
+body.Site {
+  margin-bottom: -200px;
+}
+
+footer {
+  margin-bottom: -105px;
+}
+
+.footer {
+  height: 125px;
+  padding 0px;
+  background: #7f3f00;
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-top: 20px;
+}
+
+.footer-content {
+  flex: 1;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: -20px;
+}
+
+.footer .copyright {
+  color: rgb(255, 140, 0);
+}
+
+.footer .Author {
+  color: #000;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.footer-links {
+    display: inline;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.footer-links a:active {
+  display: inline;
+  color: white;
+  text-decoration: underline;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  display: inline;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+@media () {
+
+}
+
+.close p span {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: 'Open Sans', sans-serif;
+  color: #000000;
+  text-align: justify;
+  line-height: 22px;
+}
 
 .ayuda
 ul
