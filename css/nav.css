@@ -1,16 +1,25 @@
 @import url(https://fonts.googleapis.com/css?family=Maven+Pro);
-/*CSS Table of Contents: 
+/*CSS Table of Contents:
  --------------------------
  #1: Line 12: Declare Variables
  #2: Line 20: Original CSS with minor style changes (color and position) - lots of animation css can be deleted (five different animation options)
  #3: Line 931: Additional CSS added to original
  #4: Line 945: CSS for styling the menu
  */
-/* #1: Declare variables 
+/* #1: Declare variables
  --------------------------------------------------------- */
 /* width to begin showing full menu */
-/* #2: Original CSS from Codrops article 
+/* #2: Original CSS from Codrops article
  --------------------------------------------------------- */
+ /* before and after css style*/
+
+ *,
+ *:before,
+ *:after {
+   box-sizing: border-box;
+ }
+
+
 /* Common styles of menus */
 .dl-menuwrapper {
   -webkit-perspective: 1000px;
@@ -94,10 +103,10 @@
 .dl-menuwrapper li .dl-submenu {
   display: none;
 }
-/* 
+/*
  When a submenu is openend, we will hide all li siblings.
  For that we give a class to the parent menu called "dl-subview".
- We also hide the submenu link. 
+ We also hide the submenu link.
  The opened submenu will get the class "dl-subviewopen".
  All this is done for any sub-level being entered.
  */
@@ -809,6 +818,9 @@
 .no-js .dl-menuwrapper li > a:not(:only-child):after {
   content: '';
 }
+
+
+
 /* #3: CSS added for override at widths above mobile menu
  --------------------------------------------------------- */
 @media only screen and (min-width: 801px) {
@@ -820,7 +832,7 @@
     display: none;
   }
 }
-/* #4: CSS Styling for Menu 
+/* #4: CSS Styling for Menu
  --------------------------------------------------------- */
 div:after, .nav-main:after, .nav-main-list:after, .image-thumb-list:after, .nav-footer-list:after, .contact-info-list:after, aside:after, .special-offer:after, .page-footer:after, .buttons:after {
   content: "";
