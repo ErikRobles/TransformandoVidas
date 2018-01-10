@@ -1,0 +1,47 @@
+ul {
+    float: right;
+    list-style-type: none;
+    margin-left: 0;
+    padding: 0;
+}
+
+li {
+    float: left;
+    display: block;
+    padding: 18px 25px;
+    margin-right: 3px;
+    margin-bottom: 3px;
+    color: #d7af85;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 3px;
+    background-color: #af5e0a;
+}
+
+li a {
+    text-decoration: none;
+}
+
+li.active {
+    color: #d7af85;
+    font-size: 18px;
+    font-weight: 300;
+    border-radius: 3px;
+    background-color: #802d04;
+}
+
+a {
+    color: #d7af85;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    color: white;
+}

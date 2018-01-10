@@ -11,6 +11,15 @@
 /* width to begin showing full menu */
 /* #2: Original CSS from Codrops article
  --------------------------------------------------------- */
+ /* before and after css style*/
+
+ *,
+ *:before,
+ *:after {
+   box-sizing: border-box;
+ }
+
+
 /* Common styles of menus */
 .dl-menuwrapper {
   -webkit-perspective: 1000px;
@@ -809,6 +818,9 @@
 .no-js .dl-menuwrapper li > a:not(:only-child):after {
   content: '';
 }
+
+
+
 /* #3: CSS added for override at widths above mobile menu
  --------------------------------------------------------- */
 @media only screen and (min-width: 801px) {
