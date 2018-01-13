@@ -892,6 +892,11 @@ a {
   color: white;
   padding: 9px 0;
 }
+
+li.nav-main-item.active a {
+  background: #802d04;
+}
+
 .nav-main-item > a:hover {
   background: #b66117;
 }
