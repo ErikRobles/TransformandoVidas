@@ -862,7 +862,6 @@ a {
     top: auto;
     margin: 0 auto;
     max-width: 1200px;
-    background: #d06f1a;
   }
 }
 .nav-main-list, .nav-sub-list {
@@ -872,15 +871,14 @@ a {
 .nav-main-list {
   max-width: 978px;
   margin: 0 auto;
-  background: #d06f1a;
 }
 .nav-main-item {
   display: block;
   width: 100%;
-  border-bottom: 1px solid #eb7d1d;
+  border-bottom: 1px solid ;
 }
 .nav-main-item:first-child {
-  border-top: 1px solid #eb7d1d;
+  border-top: 1px solid ;
 }
 @media only screen and (min-width: 801px) {
   .nav-main-item:first-child {
@@ -889,8 +887,7 @@ a {
 }
 .nav-main-item > a {
   display: block;
-  color: white;
-  padding: 9px 0;
+  padding: 0;
 }
 
 li.nav-main-item.active a {
@@ -898,25 +895,25 @@ li.nav-main-item.active a {
 }
 
 .nav-main-item > a:hover {
-  background: #b66117;
+  color: white;
 }
 @media only screen and (min-width: 801px) {
   .nav-main-item {
     float: left;
     position: relative;
     width: calc(25% - 1px);
-    border-right: 1px solid #eb7d1d;
+    border-right: 1px solid;
     border-bottom: none;
     text-align: center;
   }
   .nav-main-item:first-child {
-    border-left: 1px solid #eb7d1d;
+    border-left: 1px solid;
     border-top: none;
     width: calc(25% - 2px);
   }
   .nav-main-item > a {
     display: block;
-  }
+    }
 }
 @media only screen and (min-width: 801px) {
   .nav-main-item {
@@ -940,7 +937,7 @@ li.nav-main-item.active a {
   width: 50px;
   height: 50px;
   padding: 5px;
-  background: #d06f1a;
+  background: #af5e0a;
   color: white;
   font-size: 9px;
   font-weight: bold;
@@ -962,20 +959,14 @@ li.nav-main-item.active a {
   box-shadow: 0 8px 0 0 white, 0 16px 0 0 white;
 }
 .nav-handle:hover {
-  background: #b66117;
+  background: #af5e0a;
 }
 @media only screen and (min-width: 801px) {
   .nav-handle {
     display: none;
   }
 }
-.nav-sub-list {
-  position: absolute;
-  left: 0;
-  width: 100%;
-  top: 100%;
-  background: #d06f1a;
-  white-space: nowrap;
+
 }
 @media only screen and (min-width: 801px) {
   .nav-sub-list {
@@ -1035,7 +1026,7 @@ h2 {
   text-align: center;
 }
 h2 > a {
-  color: #d06f1a;
+  color: #d7af85;
 }
 h2 > a:hover {
   color: #eb7d1d;

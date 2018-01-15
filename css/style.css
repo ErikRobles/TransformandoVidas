@@ -1331,22 +1331,22 @@ a {
 @media only screen and (min-width: 801px) {
   .nav-main {
     position: relative;
-    width: 100%;
-    right: auto;
     top: auto;
     margin: 0 auto;
-    max-width: 1200px;
-    background: #d06f1a;
+    width: 80%;
+    float: right;
   }
 }
-.nav-main-list, .nav-sub-list {
+
+.nav-main-list {
   list-style: none;
   margin-top: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
-  padding-left: 0;
-  padding-right: 0;
+  padding-left: 20px;
+  padding-right: 20px;
 }
+
 .nav-main-list {
   max-width: 978px;
   margin: 0 auto;
@@ -1355,15 +1355,17 @@ a {
 .nav-main-item {
   display: block;
   width: 100%;
-  border-bottom: 1px solid #eb7d1d;
+  border-bottom: 1px solid;
 }
 
 a.active {
   background: #802d04;
+  height: 100%;
+  border-radius: 5px;
 }
 
 .nav-main-item:first-child {
-  border-top: 1px solid #eb7d1d;
+  border-top: 1px solid;
 }
 @media only screen and (min-width: 801px) {
   .nav-main-item:first-child {
@@ -1372,26 +1374,29 @@ a.active {
 }
 .nav-main-item > a {
   display: block;
-  color: white;
+  color: #d7af85;
   padding: 9px 0;
+  height: 100%;
 }
 .nav-main-item > a:hover {
   background: #b66117;
+  color: white;
 }
 @media only screen and (min-width: 801px) {
   .nav-main-item {
     float: left;
     position: relative;
     width: calc(25% - 1px);
-    border-right: 1px solid #eb7d1d;
     border-bottom: none;
     text-align: center;
   }
+  /*
   .nav-main-item:first-child {
     border-left: 1px solid #eb7d1d;
     border-top: none;
     width: calc(25% - 2px);
   }
+  */
   .nav-main-item > a {
     display: block;
   }
@@ -1418,7 +1423,7 @@ a.active {
   width: 50px;
   height: 50px;
   padding: 5px;
-  background: #d06f1a;
+  background: #af5e0a;
   color: white;
   font-size: 9px;
   font-weight: bold;
@@ -1440,13 +1445,14 @@ a.active {
   box-shadow: 0 8px 0 0 white, 0 16px 0 0 white;
 }
 .nav-handle:hover {
-  background: #b66117;
+  background: #802d04;
 }
 @media only screen and (min-width: 801px) {
   .nav-handle {
     display: none;
   }
 }
+/*
 .nav-sub-list {
   position: absolute;
   left: 0;
@@ -1455,6 +1461,7 @@ a.active {
   background: #d06f1a;
   white-space: nowrap;
 }
+*/
 @media only screen and (min-width: 801px) {
   .nav-sub-list {
     display: block;
@@ -1505,18 +1512,17 @@ a.active {
   }
 }
 /* specific to this pen */
-body {
-  font-family: 'Maven Pro';
-}
+
 h2 {
   margin-top: 3em;
   text-align: center;
 }
 h2 > a {
   color: #d06f1a;
+  padding: 20px 0px;
 }
 h2 > a:hover {
-  color: #eb7d1d;
+  color: #d06f1a;
 }
 
 blockquote {
@@ -1556,6 +1562,7 @@ blockquote {
   .headImage {
    width: 100%;
    height: auto;
+   margin-top: -20px;
   }
 
 /* MOBILE NAVIGATION */
@@ -1671,4 +1678,7 @@ blockquote {
 
 }
 
+}
+ a:visited.up {
+  color: white;
 }
